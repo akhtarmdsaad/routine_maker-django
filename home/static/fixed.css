@@ -1,0 +1,186 @@
+/* .cell  */
+/* { */
+    /* border: 2px solid blue; */
+    /* background-color: skyblue; */
+    /* padding: 10px; */
+    /* border-radius: 10px; */
+    /* font-family: cursive; */
+    /* margin: 5px; */
+    /* max-width: 80vw; */
+/* } */
+/* .cell input */
+/* { */
+    /* padding: 5px; */
+    /* border-radius: 5px; */
+/* } */
+
+/* .cell label  */
+/* { */
+    /* font-weight: 700; */
+/* } */
+
+/* input[type="button"],input[type="submit"] */
+/* { */
+    /* padding:1vw 5vh; */
+    /* margin: 1vw; */
+    /* position: relative; */
+    /* left: 30vw; */
+/* } */
+/*
+.fixed {
+width: 80%;
+margin: 0 auto;
+text-align: center;
+font-family: sans-serif;
+}
+
+.fixed h3 {
+font-size: 2em;
+margin: 0 0 20px;
+}
+
+.fixed form .container {
+display: flex;
+flex-direction: column;
+gap: 20px;
+}
+
+.fixed form .cell {
+display: flex;
+align-items: center;
+justify-content: center;
+gap: 20px;
+}
+
+.fixed form .cell input,
+.fixed form .cell select {
+border: none;
+background-color: #f0f0f0;
+padding: 10px 15px;
+border-radius: 5px;
+font-size: 1.2em;
+width: 100%;
+}
+
+.fixed form .cell select {
+width: auto;
+padding: 10px;
+}
+
+.fixed form .cell label {
+font-size: 1.2em;
+font-weight: bold;
+width: 100px;
+}
+
+.fixed form .add-cell {
+display: flex;
+justify-content: center;
+}
+
+.fixed form .add-cell button {
+background-color: #4CAF50;
+color: white;
+padding: 10px 20px;
+border: none;
+border-radius: 5px;
+font-size: 1.2em;
+cursor: pointer;
+}
+
+.fixed form .submit-cell {
+display: flex;
+justify-content: center;
+}
+
+.fixed form .submit-cell button {
+background-color: #2196F3;
+color: white;
+padding: 10px 20px;
+border: none;
+border-radius: 5px;
+font-size: 1.2em;
+cursor: pointer;
+}
+*/
+.fixed {
+  width: 80%;
+  margin: 0 auto;
+  font-family: Arial, sans-serif;
+  padding: 20px;
+}
+
+h3 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.routine {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+.row {
+  display: table-row;
+  width: 100%;
+}
+
+.cell {
+  display: table-cell;
+  padding: 10px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+  vertical-align: middle;
+}
+
+.header {
+  background-color: #ccc;
+  font-weight: bold;
+}
+
+input[type="text"],
+input[type="time"] {
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 5px;
+  border-radius: 5px;
+  border: none;
+  font-size: 16px;
+}
+
+button[type="submit"],
+button[type="button"] {
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  background-color: #4CAF50;
+  color: #fff;
+  cursor: pointer;
+}
+
+button[type="button"] {
+  background-color: #2196F3;
+  margin-right: 10px;
+}
+
+button[type="submit"]:hover,
+button[type="button"]:hover {
+  opacity: 0.8;
+}
+
+@media (max-width: 768px) {
+  .cell {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .header {
+    display: none;
+  }
+}

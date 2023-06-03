@@ -1,0 +1,54 @@
+{% extends 'routine/base.html' %}
+{% load static %}
+{% block head %}
+    <link rel="stylesheet" href="{% static 'needed.css' %}">
+{% endblock head %}
+
+{% block body %}
+<div class="fixed">
+    <h3>Needed Routine</h3>
+    <form action="{% url 'needed' %}" method="post" class="form-group">
+        {% csrf_token %}
+      <div class="routine">
+        <div class="row header">
+          <div class="cell">
+            Title
+            
+          </div>
+          <div class="cell">Total Time Required</div>
+          <div class="cell">Consistency</div>
+          <div class="cell">Delete</div>
+        </div>
+        <div class="row">
+          <div class="cell">
+            <input type="text" name="title" id="title1">
+          </div>
+          <div class="cell">
+            <div class="total time" id="totaltime1">
+              <label for="hour">Hour</label>
+              <input type="number" id="hourInput" min="0" max="23" placeholder="Hour" name="totalhour" value="00">
+              <label for="minute">Min</label>
+              <input type="number" id="minuteInput" min="0" max="59" placeholder="Minute" name="totalminute" value="00">
+            </div>
+          </div>
+          <div class="cell">
+            <div class="consistency time" id="consistencytime1">
+              <label for="hour">Hour</label>
+              <input type="number" id="hourInput" min="0" max="23" placeholder="Hour" name="consistenthour" value="00">
+              <label for="minute">Min</label>
+              <input type="number" id="minuteInput" min="0" max="59" placeholder="Minute" name="consistentminute" value="00">
+            </div>
+          </div>
+          <div class="cell"></div>
+        </div>
+      </div>
+      <button type="button" id="add">Add</button>
+      <button type="submit" id="submit">Submit</button>
+    </form>
+  </div>
+
+{% endblock body %}
+
+{% block js %}
+    <script src="{% static 'needed.js' %}"></script>
+{% endblock js %}

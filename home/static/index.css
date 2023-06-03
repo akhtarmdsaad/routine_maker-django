@@ -1,0 +1,35 @@
+.link-top{
+
+}
+
+*{
+    margin:5px;
+}
+.topic
+{
+    padding: 5px;
+}
+body{
+    font-family: cursive;
+
+}
+
+p{
+    max-width: 50vw;
+}
+
+a{
+    display: block;
+    margin: 5px;
+    padding: 5px;
+    color: rgb(0, 0, 0);
+    border: 2px solid orange;
+    max-width: fit-content;
+    text-decoration: none;
+    background-color: bisque;
+}
+
+a:hover
+{
+    color: blue;
+}

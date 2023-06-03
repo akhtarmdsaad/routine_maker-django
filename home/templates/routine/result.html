@@ -1,0 +1,37 @@
+{% extends 'routine/base.html' %}
+
+{% load static %}
+
+{% block body %}
+
+{% comment %} Title | start | end  {% endcomment %}
+
+{% if not routine %}
+    <h1>No data Provided</h1>
+
+{% else %}
+<table class="table">
+        <thead>
+            <tr>
+                <th>Title</th>
+                <th>Start</th>
+                <th>End</th>
+            </tr>
+        </thead>
+        <tbody>       
+            {% for r in routine %}
+            <tr>
+                <td scope="row">{{r.title}}</td>
+                <td>{{r.start}}</td>
+                <td>{{r.end}}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+{% endif %} 
+
+{% comment %} button of clipboard {% endcomment %}
+
+{% comment %} Summary {% endcomment %}
+
+{% endblock body %}

@@ -1,0 +1,46 @@
+{% extends 'routine/base.html' %}
+{% load static %}
+{% block head %}
+    <link rel="stylesheet" href="{% static 'needed.css' %}">
+{% endblock head %}
+
+{% block body %}
+<div class="fixed">
+    <h3>Preferred time for Task</h3>
+    <form action="{% url 'preferred' %}" method="post" class="form-group">
+        {% csrf_token %}
+      <div class="routine">
+        <div class="row header">
+          <div class="cell">Title</div>
+          <div class="cell">Start</div>
+          <div class="cell">End</div>
+          <div class="cell">Delete</div>
+        </div>
+        <div class="row">
+          <div class="cell">
+            <select name="title" class="form-control" id="title1">
+                {% for data in choices %}
+                <option> {{data}} </option>
+                {% endfor %}
+            </select>
+          </div>
+          <div class="cell">
+            <input type="time" name="start" id="start1">
+          </div>
+          <div class="cell">
+            <input type="time" name="end" id="end1">
+          </div>
+          <div class="cell"></div>
+        </div>
+      </div>
+      <button type="button" id="add">Add</button>
+      <button type="submit" id="submit">Submit</button>
+    </form>
+  </div>
+  
+  
+{% endblock body %}
+
+{% block js %}
+    <script src="{% static 'preferred.js' %}"></script>
+{% endblock js %}

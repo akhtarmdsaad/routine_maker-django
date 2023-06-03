@@ -1,0 +1,24 @@
+{% extends 'routine/base.html' %}
+{% load static %}
+{% block head %}
+    <link rel="stylesheet" href="{% static 'index.css' %}">
+{% endblock head %}
+
+{% block body %}
+
+<h3 style="font-weight:600">About</h3>
+<div class="link-top">
+    <a href="{% url 'fixed' %}">Start Now <i class="fas fa-hand-point-right"></i></a>
+</div>
+<div class="container topic">
+    <h5>What is this Actually?</h5>
+    <p>
+        It is a routine planner which plans the routine for your daily schedule. You just need to fill some details of what you want to do and thats it, it will create different type of routines and you can choose any one of them.
+    </p>
+
+</div>
+
+<div class="link-bottom">
+    <a href="{% url 'fixed' %}">Start Here <i class="fas fa-hand-point-right"></i></a>
+</div>
+{% endblock body %}

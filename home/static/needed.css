@@ -1,0 +1,101 @@
+
+.fixed {
+    width: 80%;
+    margin: 0 auto;
+    font-family: Arial, sans-serif;
+    padding: 20px;
+  }
+  
+  h3 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  .routine {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+  }
+  
+  .row {
+    display: table-row;
+    width: 100%;
+  }
+  
+  .cell {
+    display: table-cell;
+    padding: 10px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    vertical-align: middle;
+  }
+  
+  .header {
+    background-color: #ccc;
+    font-weight: bold;
+  }
+  
+  input[type="text"],
+  input[type="time"] {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 5px;
+    border-radius: 5px;
+    border: none;
+    font-size: 16px;
+  }
+  
+  button[type="submit"],
+  button[type="button"] {
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    background-color: #4CAF50;
+    color: #fff;
+    cursor: pointer;
+  }
+  
+  button[type="button"] {
+    background-color: #2196F3;
+    margin-right: 10px;
+  }
+  
+  button[type="submit"]:hover,
+  button[type="button"]:hover {
+    opacity: 0.8;
+  }
+  
+  @media (max-width: 768px) {
+    .cell {
+      display: block;
+      width: 100%;
+      margin-bottom: 10px;
+    }
+  
+    .header {
+      display: none;
+    }
+  }
+  
+  label {
+    display: inline-block;
+    font-size: 14px;
+    margin-right: 5px;
+  }
+  
+  input[type="number"] {
+    margin-right: 5px;
+    padding: 5px;
+    width: 40px;
+    font-size: 14px;
+  }
+  
+  .time {
+    display: flex;
+    align-items: center;
+  }
+  

@@ -1,0 +1,52 @@
+{% extends 'routine/base.html' %}
+{% load static %}
+{% block head %}
+
+<link rel="stylesheet" href="{% static 'fixed.css' %}">
+
+{% endblock head %}
+{% block body %}
+
+
+<div class="fixed">
+  <h3>Fixed Routine</h3>
+  <form action="{% url 'fixed' %}" method="post">
+    {% csrf_token %}
+    <div class="routine">
+      <div class="row header">
+        <div class="cell">Title</div>
+        <div class="cell">Start</div>
+        <div class="cell">End</div>
+        <div class="cell">Delete</div>
+        
+      </div>
+      <div class="row">
+        <div class="cell">
+          <input type="text" name="title" id="title1">
+        </div>
+        <div class="cell">
+          <input type="time" name="start" id="start1">
+        </div>
+        <div class="cell">
+          <input type="time" name="end" id="end1">
+        </div>
+        <div class="cell"></div>
+      </div>
+    </div>
+    <button type="button" id="add">Add</button>
+    <button type="submit" id="submit">Submit</button>
+  </form>
+</div>
+
+
+
+
+{% endblock body %}
+
+{% block js %}
+
+<script src="{% static 'fixed.js' %}"></script>
+{% endblock js %}
+
+
+
